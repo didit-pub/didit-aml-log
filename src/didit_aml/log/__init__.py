@@ -92,7 +92,7 @@ class LokiFormatter(logging.Formatter):
         extra['message'] = message
 
         # Include builtins
-        extra['level'] = record.levelname_
+        extra['level'] = record.levelname
         extra['name'] = record.name
 
         if record.exc_info:
